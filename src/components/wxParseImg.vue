@@ -39,13 +39,19 @@ export default {
       }  else {
         styleStr = ""
       }
+      if (!padding) {
+        padding = 0;
+      }
       const imageHeightStyle = mode === "widthFix" ? "" : `height: ${imageheight}px;`;
       this.newStyleStr = `${styleStr} ${imageHeightStyle} width: ${imageWidth}px; padding: 0 ${padding}px;`;
     },
     // 计算视觉优先的图片宽高
     wxAutoImageCal(originalWidth, originalHeight) {
       // 获取图片的原始长宽
-      const { padding } = this.node.attr;
+      let { padding } = this.node.attr;
+      if (!padding) {
+        padding = 0;
+      }
       const windowWidth = this.node.$screen.width - 2 * padding;
       const results = {};
 
