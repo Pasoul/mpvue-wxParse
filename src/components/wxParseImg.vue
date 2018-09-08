@@ -1,5 +1,5 @@
 <template>
-  <image :mode="node.attr.mode" :lazy-load="node.attr.lazyLoad" :class="node.classStr" :style="newStyleStr || node.styleStr" :data-src="node.attr.src" :src="node.attr.src" @tap="wxParseImgTap" @load="wxParseImgLoad" />
+  <image :mode="node.attr.mode" :lazy-load="node.attr.lazyLoad" class="mp-parse-img" :class="node.classStr" :style="newStyleStr || node.styleStr" :data-src="node.attr.src" :src="node.attr.src" @tap="wxParseImgTap" @load="wxParseImgLoad" />
 </template>
 
 <script>
@@ -33,10 +33,14 @@ export default {
       const { width, height } = e.mp.detail;
       const recal = this.wxAutoImageCal(width, height);
       const { imageheight, imageWidth } = recal;
-      const { padding, mode } = this.node.attr;
-      const { styleStr } = this.node;
+      let { padding, mode,styleStr } = this.node.attr;
+      if (styleStr) {
+        styleStr = styleStr.endsWith(';') ? styleStr : styleStr + ';'
+      }  else {
+        styleStr = ""
+      }
       const imageHeightStyle = mode === "widthFix" ? "" : `height: ${imageheight}px;`;
-      this.newStyleStr = `${styleStr}; ${imageHeightStyle}; width: ${imageWidth}px; padding: 0 ${+padding}px;`;
+      this.newStyleStr = `${styleStr} ${imageHeightStyle} width: ${imageWidth}px; padding: 0 ${padding}px;`;
     },
     // 计算视觉优先的图片宽高
     wxAutoImageCal(originalWidth, originalHeight) {
@@ -67,3 +71,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.mp-parse-img{
+  max-width: 100%;
+}
+</style>

@@ -1,33 +1,26 @@
 {
-  "name": "mpvue-wxparse-jlb",
-  "version": "0.6.8",
-  "description": "适用于 Mpvue 的微信小程序富文本解析自定义组件，支持HTML及markdown解析",
-  "main": "src/wxParse.vue",
-  "scripts": {
-    "lint": "eslint --format node_modules/eslint-friendly-formatter --ext .js,.vue src",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Pasoul/mpvue-wxParse.git"
-  },
-  "keywords": [
-    "mpvue",
-    "wxparse",
-    "wxapp"
-  ],
-  "author": "Pasoul",
-  "contributors": [
-    "Dicn",
-    "F-loat <chaimaoyuan@foxmail.com>"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "babel-eslint": "^8.2.2",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-plugin-html": "^4.0.3",
-    "eslint-plugin-import": "^2.10.0"
-  }
+	"name": "mpvue-wxparse-jlb",
+	"version": "0.7.0",
+	"description": "适用于 Mpvue 的微信小程序富文本解析自定义组件，支持HTML及markdown解析",
+	"main": "src/wxParse.vue",
+	"scripts": {
+		"lint": "eslint --format node_modules/eslint-friendly-formatter --ext .js,.vue src",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Pasoul/mpvue-wxParse.git"
+	},
+	"keywords": [ "mpvue", "wxparse", "wxapp" ],
+	"author": "Pasoul",
+	"contributors": [ "Dicn", "F-loat <chaimaoyuan@foxmail.com>" ],
+	"license": "MIT",
+	"devDependencies": {
+		"babel-eslint": "^8.2.2",
+		"eslint": "^4.19.1",
+		"eslint-config-airbnb-base": "^12.1.0",
+		"eslint-friendly-formatter": "^4.0.1",
+		"eslint-plugin-html": "^4.0.3",
+		"eslint-plugin-import": "^2.10.0"
+	}
 }

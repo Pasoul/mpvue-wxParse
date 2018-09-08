@@ -12,16 +12,16 @@
 
 ## 属性
 
-| 名称              | 类型           | 默认值        | 描述               |
-| -----------------|--------------- | ------------- | ----------------  |
-| loading          | Boolean        | false         | 数据加载状态       |
-| className        | String         | —             | 自定义 class 名称  |
-| content          | String         | —             | 渲染内容           |
-| noData           | String         | 数据不能为空   | 空数据时的渲染展示  |
-| startHandler     | Function       | 见源码         | 自定义 parser 函数 |
-| endHandler       | Function       | null          | 自定义 parser 函数 |
-| charsHandler     | Function       | null          | 自定义 parser 函数 |
-| imageProp        | Object         | 见下文        | 图片相关参数        |
+| 名称         | 类型     | 默认值       | 描述               |
+| ------------ | -------- | ------------ | ------------------ |
+| loading      | Boolean  | false        | 数据加载状态       |
+| className    | String   | —           | 自定义 class 名称  |
+| content      | String   | —           | 渲染内容           |
+| noData       | String   | 数据不能为空 | 空数据时的渲染展示 |
+| startHandler | Function | 见源码       | 自定义 parser 函数 |
+| endHandler   | Function | null         | 自定义 parser 函数 |
+| charsHandler | Function | null         | 自定义 parser 函数 |
+| imageProp    | Object   | 见下文       | 图片相关参数       |
 
 ### 自定义 parser 函数具体介绍
 
@@ -31,33 +31,34 @@
 
 ### imageProp 对象具体属性
 
-| 名称              | 类型           | 默认值        | 描述                |
-| -----------------|--------------- | ------------- | ------------------ |
-| mode             | String         | 'aspectFit'   | 图片裁剪、缩放的模式 |
-| padding          | Number         | 0             | 图片内边距          |
-| lazyLoad         | Boolean        | false         | 图片懒加载          |
-| domain           | String         | ''            | 图片服务域名        |
-| autoPreview      | Boolean        | false         | 是否需要预览图片     |
+| 名称        | 类型    | 默认值      | 描述                 |
+| ----------- | ------- | ----------- | -------------------- |
+| mode        | String  | 'aspectFit' | 图片裁剪、缩放的模式 |
+| padding     | Number  | 0           | 图片内边距           |
+| lazyLoad    | Boolean | false       | 图片懒加载           |
+| domain      | String  | ''          | 图片服务域名         |
+| autoPreview | Boolean | false       | 是否需要预览图片     |
+| styleStr    | String  | ''          | 自定义图片样式       |
 
 ### videoProp 对象具体属性
 
-| 名称              | 类型           | 默认值        | 描述                |
-| -----------------|--------------- | ------------- | ------------------ |
-| isFull           | Boolean        | false         | 是否需要全屏展示帧图片          |
-| lazyLoad         | String         | "aspectFit"   | 帧图片裁剪、缩放的模式          |
-| mode             | Boolean        | false         | 图片懒加载          |
-| margin           | Number         | 0             | 图片两边留的边距         |
-| customFrameImg   | Boolean        | false         | 是否自定义视频帧Url  |
-| frameImgUrl      | String         | ""            | 视频帧图片url  |
-| replace          | Boolean        | false         | 是否替换视频url，为false则在视频url后拼接frameImgUrl  |
-| videoStyle       | String         | ""         | 自定义video标签样式  |
-| videoImgStyle    | String         | ""         | 自定义视频帧图片样式  |
+| 名称           | 类型    | 默认值      | 描述                                                 |
+| -------------- | ------- | ----------- | ---------------------------------------------------- |
+| isFull         | Boolean | false       | 是否需要全屏展示帧图片                               |
+| lazyLoad       | String  | "aspectFit" | 帧图片裁剪、缩放的模式                               |
+| mode           | Boolean | false       | 图片懒加载                                           |
+| margin         | Number  | 0           | 图片两边留的边距                                     |
+| customFrameImg | Boolean | false       | 是否自定义视频帧Url                                  |
+| frameImgUrl    | String  | ""          | 视频帧图片url                                        |
+| replace        | Boolean | false       | 是否替换视频url，为false则在视频url后拼接frameImgUrl |
+| videoStyle     | String  | ""          | 自定义video标签样式                                  |
+| videoImgStyle  | String  | ""          | 自定义视频帧图片样式                                 |
 ## 事件
 
-| 名称             | 参数              | 描述              |
-| -----------------|----------------- | ----------------  |
-| preview          | 图片地址，原始事件 | 预览图片时触发     |
-| navigate         | 链接地址，原始事件 | 点击链接时触发     |
+| 名称     | 参数               | 描述           |
+| -------- | ------------------ | -------------- |
+| preview  | 图片地址，原始事件 | 预览图片时触发 |
+| navigate | 链接地址，原始事件 | 点击链接时触发 |
 
 ## 基本使用方法
 

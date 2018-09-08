@@ -63,7 +63,8 @@ export default {
           padding: 0,
           lazyLoad: false,
           domain: "",
-          autoPreview: false
+          autoPreview: false,
+          styleStr: '' // 图片样式
         };
       }
     },
