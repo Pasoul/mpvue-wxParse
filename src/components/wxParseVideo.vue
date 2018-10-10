@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       newStyleStr: "",
-      styleObject: "width: 1px;height:1px;position: absolute;left: 0;top: 0;opacity: 0;z-index: -1"
+      styleObject: "width: 1rpx;height:1rpx;opacity:0;display:none; "
     };
   },
   computed: {
